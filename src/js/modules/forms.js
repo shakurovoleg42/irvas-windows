@@ -2,12 +2,19 @@ const forms = () => {
     const form = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input'),
           phoneInputs = document.querySelectorAll('input[name="user_phone"]');
+        //   nameInputs = document.querySelectorAll('input[name="user_name"]');
 
     phoneInputs.forEach(item => {
         item.addEventListener('input', () => {
             item.value = item.value.replace(/\D/, '');
         });
     });
+
+    // nameInputs.forEach(item => {
+    //     item.addEventListener('input', () => {
+    //         item.value = item.value.replace(/\W/, '');
+    //     });
+    // });
 
     const message = {
         loading: 'Загрузка...',
