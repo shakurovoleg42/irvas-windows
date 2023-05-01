@@ -22,6 +22,8 @@ const images = () => {
             imgPopup.style.display ='flex';
             const path = target.parentNode.getAttribute('href');
             bigImage.setAttribute('src', path);
+            imgPopup.style.display = "block";
+            document.body.style.overflow = "hidden";
         }
 
         if (target && target.matches('div.popup')) {
